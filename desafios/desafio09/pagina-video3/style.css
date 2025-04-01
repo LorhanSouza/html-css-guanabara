@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.js{/* #->Referencia ao id da div / .->referecia à classe do div */
+    width: 40%; /*Responsável por controlar a largura da div menu*/
+    margin: auto; /*Responsável por centralizar a div menu*/
+}
+
+.saida{
+    text-align: center;
+}

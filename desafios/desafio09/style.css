@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.menu{/* #->Referencia ao id da div / .->referecia à classe do div */
+    width: 30%; /*Responsável por controlar a largura da div menu*/
+    margin: auto; /*Responsável por centralizar a div menu*/
+}

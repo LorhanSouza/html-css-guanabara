@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir a imagem em dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador</p>
+
+    <picture><!--Tag que comporta Imagens flexíveis-->
+        <!--CUIDADO: AS IMAGENS PRECISAM ESTAR NA ORDEM CRESCENTE SENÃO NÃO FUNCIONA-->
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="./imagens/foto-g.png" alt="Foto da imagem grande">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Aprendendo a reproduzir áudio no navegador</p>
+    <audio src="/media/Bertysolo — Pour la vie (instrumental).m4a" controls autoplay></audio>
+    <h2>OU</h2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="/media/Bertysolo — Pour la vie (instrumental).m4a" type="audio/ogg">
+        <source src="/media/Bertysolo — Pour la vie (instrumental).ogg" type="audio/ogg">
+        <!--Só aparece quando os dois de cima falharem em encontrar o arquivo ou em reproduzí-lo-->
+        <p>Infelizmente o seu navegador não consegue reproduzir. <a href="/media/Bertysolo — Pour la vie (instrumental).m4a">Clique aqui</a> para baixar a música</p>
+    </audio>
+</body>
+</html>
